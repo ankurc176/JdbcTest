@@ -29,10 +29,23 @@ public class App
         
         Student st= new Student();
         
-        st.setStudentId(2);
+      //  st.setStudentId(2);
         st.setStudentName("Ankit");
-        st.setStudentMarks(1090);
+        st.setStudentMarks(1000);
         
-        objectImple.insert(st);
+//        objectImple.insert(st);
+        
+        
+       Student st1 = objectImple.retrieve(1);
+       
+       System.out.println(st1.getStudentId());
+       System.out.println(st1.getStudentName());
+       System.out.println(st1.getStudentMarks());
+       
+       objectImple.update(st);
+       
+       
+       objectImple.delete(3);
+        
     }
 }
